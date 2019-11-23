@@ -1,3 +1,7 @@
+  /*********************/
+ /***** Inicio ********/
+/*********************/
+
 :root {
     --blanco: #ffffff;
     --primario: #14aa89;
@@ -49,12 +53,34 @@ h3 {
     margin-top: 3rem;
 }
 
+.barkbg{
+  background-color: #999;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
-/* Estilo de la navbar */
+.colorbg{
+  background-image: linear-gradient(rgba(171, 26, 207, 0.5), rgba(8, 113, 184, 0.5));
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+
+  /*********************/
+ /***** Navbar ********/
+/*********************/
  #navbar {
     overflow: hidden;
     background-color: var(--oscuro);
  }
+
+ #navbar-right {
+  float: right;
+}
 
  #navbar a.this {
     background-color: var(--primario);
@@ -79,9 +105,13 @@ h3 {
     text-align: center;
     padding: 14px;
     text-decoration: none;
+    margin-top: 15px;
+    margin: 15px;
   }
   
-  /* Contenido de la página */
+  /************************/
+ /***** Contenido ********/
+/************************/
   .content {
     padding: 16px;
   }
@@ -98,7 +128,9 @@ h3 {
         padding-top: 60px;
     }
 
-    /* Inicia Hero */
+  /*********************/
+ /***** Hero **********/
+/*********************/
 
     body, html {
         height: 100%;
@@ -123,6 +155,7 @@ h3 {
     transform: translate(-50%, -50%);
     color: #fff;
     }
+
   /* Termina Hero */
 
 
@@ -143,10 +176,13 @@ h3 {
     border-radius: 50%;
 }
 .iconos i {
-    font-size: 2rem;
+    font-size: 50px;
     color: var(--oscuro);
 }
   
+  /*********************/
+ /***** Footer ********/
+/*********************/
 
 .footer {
 
@@ -271,52 +307,50 @@ h3 {
 }
 
 
-/** CSS Panel Spry **/
+  /*************************/
+ /***** Panel Spry ********/
+/*************************/
 
 /* Estilo del Tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-  }
-  
-  /* Botones para abrir el tab */
-  .tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-  }
-  
-  /* Hover de los botones */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Botón Activo */
-  .tab button.this {
-    background-color: #ccc;
-  }
-  
-  /* Estilo del contenedor */
-  .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    animation: fadeEffect 1s; /* Efecto de fade de 1s */
-  }
-  
-  /* De  a 1 de opacidad */
-  @keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
+.tab a{
+  background-color: var(--secundario);
+  color: var(--blanco);
+  font-size: 24px;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.tab a:hover {
+  background-color: var(--gris);
+  color: var(--blanco);
+}
 
-  /** Botones de social icons **/
+/* Create an active/current tablink class */
+.tab a.this {
+  background-color: var(--primario);
+  color: var(--blanco);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+  /*******************************/
+ /******* Redes Sociales ********/
+/*******************************/
 .boton .fa {
     padding: 20px;
     font-size: 30px;
@@ -349,7 +383,9 @@ h3 {
     color: white;
 }
 
- /* Botón volver arriba */
+  /***************************/
+ /******* Scroll Top ********/
+/***************************/
 
  #myBtn {
     display: none; /* Oculto por default */
@@ -371,7 +407,9 @@ h3 {
     background-color: #555; /* Lo volvemos opaco con hover */
   }
 
-  /* Inicia Acordeón */
+  /*************************/
+ /******* Acordion ********/
+/*************************/
 .accordion {
     background-color: var(--blanco);
     color: var(--gris);
@@ -417,8 +455,9 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
+   /*******************************************/
   /** Formulario de contacto *versión app*  **/
+ /*******************************************/
 
   *, *:before, *:after {
     box-sizing: border-box;
@@ -648,36 +687,75 @@ h3 {
       flex-direction: column;
     }
   }
+   /*********************/
+  /* Botón de Descarga */
+ /*********************/
+  .btn {
+    background-color: rgb(41, 145, 250);
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
   
-/************************/
-/******Key Frames ******/
-.slide-right {
-	-webkit-animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
-	        animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+  /* Descargar */
+  .download {
+    border-color: var(--primario);
+    color: rgb(41, 145, 250);
+    border-radius: 8px;
+  }
+
+  /**********************/ 
+ /**** Back to Top *****/
+/**********************/
+
+
+/** Estilo del botón **/
+
+#return-to-top { 
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--primario);
+  background: rgba(20, 170, 137, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: rgba(20, 170, 137, 0.9);
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
 }
 
-/**
- * ----------------------------------------
- * animation slide-right
- * ----------------------------------------
- */
- @-webkit-keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-  }
-}
-@keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-  }
-}

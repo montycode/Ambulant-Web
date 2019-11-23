@@ -5,29 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ambulant - Organización para todo, para todos.</title>
-    <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/95feb38de4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- .back to top -->
+    <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-up"></i></a>
+    <!-- .back to top -->
+
+    <!-- .header -->
     <div class="hero-image">
         <div class="hero-text">
-          <img src="/img/ambulant_logo.png" style="width: 200px;" alt="logo" class="slide-right">
+          <img src="/img/ambulant_logo.png" style="width: 200px;" alt="">
           <h1>Ambulant</h1>
           <p>Organización para todo, para todos.</p>
         </div>
     </div>
     <div id="navbar">
-            <a href="/index.html">Inicio</a>
-            <a href="/nosotros.html">Nosotros</a>
-            <a href="/contacto.html" class="this" >Contacto</a>
-            <a href="#">Descargar</a>
+        <a href="/index.html"><i class="fa fa-home"></i> Inicio</a>
+        <a href="/nosotros.html">Nosotros</a>
+        <a href="/contacto.html" class="this">Contacto</a>
+    <div id="navbar-right">
+        <a href="/contacto.html" class="btn download">Descargar <i class="fa fa-download"></i></a>
+    </div>
         </div>
-
     <!-- .header -->
 
     <section class="contact-hero">
@@ -115,39 +125,41 @@
         </div>
       </div>
     </section>
+    <!--.footer -->
     <div class="footer">
-            <div class="f1">
-                <h2>Menú</h2> 
-                <p class="footer-links">
-                    <a href="#">Inicio</a>
-                    ·
-                    <a href="#">Nosotros</a>
-                    ·
-                    <a href="/contacto.html">Contacto</a>
-                    ·
-                    <a href="#">Descargar</a>
-                </p>
-                <p class="footer-company-name">Ambulant &copy; 2019</p>
-            </div>
-            <div class="f2">
-                <img src="/img/ambulant_logo_white.png" alt="" style="width: 200px;">
-            </div>
-            <div class="f3">
-                <p class="footer-company-about">
-                    <h2>Síguenos</h2> 
-                    Cónoce más de nosotros en nuestras redes sociales y sé testigo de las miles de personas que hoy disfrutan de Ambulant.
-                </p>
-                <div class="footer-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
+        <div class="f1">
+            <h2>Menú</h2> 
+            <p class="footer-links">
+                <a href="/index.html">Inicio</a>
+                ·
+                <a href="/nosotros.html">Nosotros</a>
+                ·
+                <a href="/contacto.html">Contacto</a>
+                ·
+                <a href="#">Descargar</a>
+            </p>
+            <p class="footer-company-name">Ambulant &copy; 2019</p>
+        </div>
+        <div class="f2">
+            <img src="/img/ambulant_logo_white.png" alt="" style="width: 200px;">
+        </div>
+        <div class="f3">
+            <p class="footer-company-about">
+                <h2>Síguenos</h2>
+                Cónoce más de nosotros en nuestras redes sociales y sé testigo de las miles de personas que hoy disfrutan de Ambulant.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
-        <!-- .footer -->  
+    </div>
+    <!--.footer -->
 </body>
 <script src="js/style.js"></script>
 <script src="js/button.js"></script>
 <script src="js/navbar.js"></script>
+
 </html>

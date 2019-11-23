@@ -1,19 +1,13 @@
-  //Obtenemos el botón:
-  mybutton = document.getElementById("myBtn");
 
-  // Cuando el usuario baja 20px mostramos el botón
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-  
-  // CUando el usuario da click sobre el botón volvemos al inicio de la página
-  function topFunction() {
-    document.body.scrollTop = 0; // Para Safari
-    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
-  }
+    $(window).scroll(function(){
+      if ($(this).scrollTop() >= 80) {        // Se activa al pasar 50px
+          $('#return-to-top').fadeIn(200);    // Fade in de la flecha
+      } else {
+          $('#return-to-top').fadeOut(200);   // Fade out de la flecha
+      }
+    });
+    $('#return-to-top').click(function() {      // Al dar click a la flecha
+      $('body,html').animate({
+          scrollTop : 0                       // Volver al inicio
+      }, 500);
+    });

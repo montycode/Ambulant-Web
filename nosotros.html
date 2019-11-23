@@ -25,66 +25,32 @@
     </div>
     <div id="navbar">
             <a href="/index.html">Inicio</a>
-            <a href="/nosotros.html">Nosotros</a>
-            <a href="/contacto.html" class="this" >Contacto</a>
+            <a href="/nosotros.html" class="this">Nosotros</a>
+            <a href="/contacto.html">Contacto</a>
             <a href="#">Descargar</a>
         </div>
 
-    <section>
-        <main class="servicios">
-            <h2>Nuestros Servicios</h2>
-            <div class="servicios-contenedor">
-                <div class="servicio">
-                    <h3>FÁCIL DE USAR</h3>
-                    <div class="iconos">
-                        <i class="far fa-grin-stars"></i>
-                    </div>
-                    <p>Un sistema limpio e intuitivo diseñado para simplificar su rutina mientras que le da un control total sobre todos los aspectos de su negocio.</p>
-                </div>
-                <div class="servicio">
-                    <h3>VENDE</h3>
-                    <div class="iconos">
-                        <i class="fas fa-comment-dollar"></i>
-                    </div>
-                    <p>puede ser utilizado en la caja registradora del comercio para que el cliente pueda comprobar los productos que adquirió en la venta y por usted para acelerar el proceso de venta. Un sistema de ventas, infinitas soluciones para hacer crecer su negocio!</p>
-                </div>
-                <div class="servicio">
-                    <h3>ORGANIZA</h3>
-                    <div class="iconos">
-                        <i class="fas fa-cubes"></i>
-                    </div>
-                    <p>Controla tu inventario con facilidad. Donde quiera que vayas, tu analíticas siempre en el bolsillo!</p>
-                </div>
-            </div> <!--.servicios-->
-    </section>
     <!-- .header -->
-    <div class="contenedor">
 
-        <!-- Tab links -->
-        <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'London')" id="defaultOpen">London</button>
-            <button class="tablinks" onclick="openTab(event, 'Paris')">Paris</button>
-            <button class="tablinks" onclick="openTab(event, 'Tokyo')">Tokyo</button>
+    <section>
+        <div class="contenedor">
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+            
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
+            
+            <button class="accordion">Section 3</button>
+            <div class="panel">
+                <p>Lorem ipsum...</p>
+            </div>
         </div>
-      
-        <!-- Tab content -->
-        <div id="London" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
-        </div>
-        
-        <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
-        </div>
-        
-        <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-        </div>
-        </main>
-           
-    </div>
+    </section>
+    
     <div class="footer">
 
         <div class="f1">
@@ -123,14 +89,19 @@
         </div>
       
     </div>
+
+    <!-- .volver arriba -->
+    <button onclick="topFunction()" id="myBtn" title="Volver Arriba">Subir</button>
+
 </body>
 
 <script>
-    // Get the element with id="defaultOpen" and click on it
+    // Obtener el elemento con id="defaultOpen" y hacer click en el.
     document.getElementById("defaultOpen").click();
 </script>
 <script src="js/style.js"></script>
 <script src="js/button.js"></script>
 <script src="js/navbar.js"></script>
+<script src="js/acordion.js"></script>
 
 </html>

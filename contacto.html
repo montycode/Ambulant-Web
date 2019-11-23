@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ambulant - Organización para todo, para todos.</title>
+    <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Krub:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="hero-image">
+        <div class="hero-text">
+          <img src="/img/ambulant_logo.png" style="width: 200px;" alt="">
+          <h1>Ambulant</h1>
+          <p>Organización para todo, para todos.</p>
+        </div>
+    </div>
+    <div id="navbar">
+            <a href="/index.html">Inicio</a>
+            <a href="/nosotros.html">Nosotros</a>
+            <a href="/contacto.html" class="this" >Contacto</a>
+            <a href="#">Descargar</a>
+        </div>
+
+    <!-- .header -->
+    <div class="contenedor">
+        <div class="container">
+            <form>
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Nombre</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Tu nombre">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Apellido</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Tu apellido">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="country">País</label>
+                </div>
+                <div class="col-75">
+                  <select id="country" name="country">
+                    <option value="mexico">México</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Mensaje</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="Déjanos tus dudas o comentarios." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Enviar">
+              </div>
+            </form>
+          </div>  
+    </div>
+    <!-- .formulario-->
+    <div class="footer">
+            <div class="f1">
+                <h2>Menú</h2> 
+                <p class="footer-links">
+                    <a href="#">Inicio</a>
+                    ·
+                    <a href="#">Nosotros</a>
+                    ·
+                    <a href="/contacto.html">Contacto</a>
+                    ·
+                    <a href="#">Descargar</a>
+                </p>
+                <p class="footer-company-name">Ambulant &copy; 2019</p>
+            </div>
+            <div class="f2">
+                <img src="/img/ambulant_logo_white.png" alt="" style="width: 200px;">
+            </div>
+            <div class="f3">
+                <p class="footer-company-about">
+                    <h2>Síguenos</h2> 
+                    Cónoce más de nosotros en nuestras redes sociales y sé testigo de las miles de personas que hoy disfrutan de Ambulant.
+                </p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- .footer -->  
+</body>
+<script src="js/style.js"></script>
+<script src="js/button.js"></script>
+<script src="js/navbar.js"></script>
+</html>

@@ -16,7 +16,7 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div class="hero-image">
         <div class="hero-text">
-          <img src="/img/ambulant_logo.png" style="width: 200px;" alt="">
+          <img src="/img/ambulant_logo.png" style="width: 200px;" alt="logo" class="slide-right">
           <h1>Ambulant</h1>
           <p>Organización para todo, para todos.</p>
         </div>
@@ -29,52 +29,92 @@
         </div>
 
     <!-- .header -->
-    <div class="contenedor">
-        <div class="container">
-            <form>
-              <div class="row">
-                <div class="col-25">
-                  <label for="fname">Nombre</label>
+
+    <section class="contact-hero">
+      <div class="box">
+        <div class="row">
+        <div class="column">
+          <div class="container">
+            <div class="screen">
+              <div class="screen-header">
+                <div class="screen-header-left">
+                  <div class="screen-header-button close"></div>
+                  <div class="screen-header-button maximize"></div>
+                  <div class="screen-header-button minimize"></div>
                 </div>
-                <div class="col-75">
-                  <input type="text" id="fname" name="firstname" placeholder="Tu nombre">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="lname">Apellido</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="lname" name="lastname" placeholder="Tu apellido">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="country">País</label>
-                </div>
-                <div class="col-75">
-                  <select id="country" name="country">
-                    <option value="mexico">México</option>
-                    <option value="usa">USA</option>
-                    <option value="canada">Canada</option>
-                  </select>
+                <div class="screen-header-right">
+                  <div class="screen-header-ellipsis"></div>
+                  <div class="screen-header-ellipsis"></div>
+                  <div class="screen-header-ellipsis"></div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="subject">Mensaje</label>
+              <div class="screen-body">
+                <div class="screen-body-item left">
+                  <div class="app-title">
+                    <span>CONTÁCTANOS</span>
+                  </div>
+                  <div class="app-contact">soporte@ambulant.com</div>
                 </div>
-                <div class="col-75">
-                  <textarea id="subject" name="subject" placeholder="Déjanos tus dudas o comentarios." style="height:200px"></textarea>
+                <div class="screen-body-item">
+                  <div class="app-form">
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="NOMBRE">
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="CORREO">
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="TELÉFONO">
+                    </div>
+                    <div class="app-form-group message">
+                      <input class="app-form-control" placeholder="MENSAJE">
+                    </div>
+                    <div class="app-form-group buttons">
+                      <button class="app-form-button">CANCELAR</button>
+                      <button class="app-form-button">ENVIAR</button>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <input type="submit" value="Enviar">
-              </div>
-            </form>
-          </div>  
-    </div>
+        </div>
+      </div>
+      </div>
+    </section>
     <!-- .formulario-->
+    <section>
+      <div class="box">
+        <h2>Nuestros Servicios</h2>
+        <div class="row">
+            <div class="column">
+                <div class="servicio">
+                    <h3>FÁCIL DE USAR</h3>
+                    <div class="iconos">
+                        <i class="far fa-grin-stars"></i>
+                    </div>
+                    <p>Un sistema limpio e intuitivo diseñado para simplificar su rutina mientras que le da un control total sobre todos los aspectos de su negocio.</p>   
+                </div>
+            </div>
+            <div class="column">
+                <div class="servicio">
+                    <h3>VENDE</h3>
+                    <div class="iconos">
+                        <i class="fas fa-comment-dollar"></i>
+                    </div>
+                    <p>puede ser utilizado en la caja registradora del comercio para que el cliente pueda comprobar los productos que adquirió en la venta y por usted para acelerar el proceso de venta. Un sistema de ventas, infinitas soluciones para hacer crecer su negocio!</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="servicio">
+                    <h3>ORGANIZA</h3>
+                    <div class="iconos">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <p>Controla tu inventario con facilidad. Donde quiera que vayas, tu analíticas siempre en el bolsillo!</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
     <div class="footer">
             <div class="f1">
                 <h2>Menú</h2> 

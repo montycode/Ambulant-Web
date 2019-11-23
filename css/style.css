@@ -30,6 +30,12 @@ h3 {
     font-size: 1.6rem;
 }
 
+.box{
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2rem;
+}
+
 .contenedor {
     margin: 0 auto;
     max-width: 1200px;
@@ -40,7 +46,9 @@ h3 {
     -moz-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
     box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
     margin-bottom: 3rem;
+    margin-top: 3rem;
 }
+
 
 /* Estilo de la navbar */
  #navbar {
@@ -51,6 +59,16 @@ h3 {
  #navbar a.this {
     background-color: var(--primario);
     color: #fff;
+  }
+
+  #navbar a.this:hover {
+    background-color: var(--primario);
+    color: #fff;
+  }
+
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
   }
   
   /* Navbar links */
@@ -128,78 +146,7 @@ h3 {
     font-size: 2rem;
     color: var(--oscuro);
 }
-
-
-/* Inicia Form */
-/* Estilo de los inputs */
-input[type=text], select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-  }
   
-  /* Estilo de los labels */
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-  
-  /* Botón "Enviar" */
-  input[type=submit] {
-    background-color: var(--primario);
-    color: var(--blanco);
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-  
-  /* Contenedor */
-  .container {
-    border-radius: 5px;
-    background-color: var(--blanco);
-    padding: 20px;
-  }
-  
-  /* Columna para labels con: 25% width */
-  .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
-  
-  /* Columna para labels con: 75% width */
-  .col-75 {
-    float: left;
-    width: 75%;
-    margin-top: 6px;
-  }
-  
-  /* Columna para labels con: */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - para pantallas de menos de 600px */
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
-  }
-
-
-    .enviar {
-        display: flex;
-        justify-content: flex-end;
-    }
-    /** Termina Form **/
 
 .footer {
 
@@ -437,13 +384,13 @@ input[type=text], select, textarea{
     transition: 0.4s;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Cambio de color para el botón cuando está activo (se añade la clase .actibe con JS), y cuando hacemos hover con el mouse */
   .active, .accordion:hover {
     background-color: var(--secundario);
     color: var(--blanco);
   }
   
-  /* Style the accordion panel. Note: hidden by default */
+  /* Estilo del panel del acordeón. */
   .panel {
     padding: 0 18px;
     background-color: var(--blanco);
@@ -452,7 +399,7 @@ input[type=text], select, textarea{
   }
 
   .accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\02795'; /* Código para el simbolo: (+) */
     font-size: 18px;
     color: var(--blanco);
     float: right;
@@ -460,5 +407,277 @@ input[type=text], select, textarea{
   }
   
   .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "\2796"; /* Código para el simbolo: (-) */
   }
+
+  .contact-hero {
+    background-image: linear-gradient(rgba(171, 26, 207, 0.5), rgba(8, 113, 184, 0.5)), url(/img/hero2.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /** Formulario de contacto *versión app*  **/
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  button, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+
+ /* Contenedor */
+  .container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+
+  .screen {
+    position: relative;
+    background: var(--blanco);
+    border-radius: 15px;
+  }
+  
+  .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    right: 60px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+  
+  .screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--oscuro);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .screen-header-left {
+    margin-right: auto;
+  }
+  
+  .screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  .screen-header-button.close {
+    background: #ed1c38;
+  }
+  
+  .screen-header-button.maximize {
+    background: #e8e925;
+  }
+  
+  .screen-header-button.minimize {
+    background: var(--primario);
+  }
+  
+  .screen-header-right {
+    display: flex;
+  }
+  
+  .screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: var(--primario);
+    font-size: 26px;
+  }
+  
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 25px;
+    height: 4px;
+    background: var(--primario);
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #666;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #ddd;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: var(--primario);
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: var(--secundario);
+  }
+  
+  .dribbble {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+  }
+  
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+  }
+
+  .row {
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+  }
+
+  @media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+  
+/************************/
+/******Key Frames ******/
+.slide-right {
+	-webkit-animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+	        animation: slide-right 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-right
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+}

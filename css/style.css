@@ -356,20 +356,20 @@ h3 {
   color: var(--blanco);
 }
 
-/* Create an active/current tablink class */
+/* Crea una clase tab/activa */
 .tab a.this {
   background-color: var(--primario);
   color: var(--blanco);
 }
 
-/* Style the tab content */
+/* Estilo de contenido de la tab */
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  animation: fadeEffect 1s; /* Efectp de fade en 1s */
 }
 
-/* Go from zero to full opacity */
+/* Va de 0 a 100% de opacidad */
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
